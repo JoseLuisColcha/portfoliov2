@@ -1,15 +1,11 @@
+import { TitleSection } from './TitleSection'
+
 export const AboutMe = () => {
   return (
     <div id="sobre-mi" className=" flex-center flex-col space-y-5 z-30">
-      <div className="flex flex-col">
-        <span className="font-free-script text-3xl text-brand-red">
-          TRAYECTORIA
-        </span>
-        <span className="font-druk text-9xl/[110px] text-brand">
-          ACERCA DE MI
-        </span>
-      </div>
-      <p className="font-inter px-40 text-center">
+      <TitleSection title="ACERCA DE MI" subtitle="TRAYECTORIA" />
+
+      <p className="font-inter px-10 sm:px-10 md:px-20 lg:px-40 text-start text-sm sm:text-base">
         Soy un apasionado por la tecnología y el diseño, graduado en Desarrollo
         de Software en la EPN, tras mis estudios, comencé mi camino como
         freelance, donde aprendí a gestionar proyectos de principio a fin y a

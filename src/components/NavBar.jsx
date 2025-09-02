@@ -1,6 +1,6 @@
 import { MobileMenu } from './MobileMenu'
 
-export const NavBar = () => {
+export const Navbar = () => {
   const menuProps = [
     {
       url: '#inicio',

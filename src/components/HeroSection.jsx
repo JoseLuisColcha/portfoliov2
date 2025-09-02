@@ -11,7 +11,7 @@ export const HeroSection = () => {
 
       <div className="absolute inset-x-[10vw] sm:inset-x-[10vw] md:inset-x-[11vw] lg:inset-x-[12.8vw] bottom-0 space-y-6 z-20">
         <section className="max-w-full sm:max-w-[40%] md:max-w-[40%] lg:max-w-[40%] space-y-3 mx-auto sm:mx-0">
-          <p className="font-inter text-sm sm:text-base text-center sm:text-left">
+          <p className="font-inter text-sm sm:text-base text-left">
             Hola, soy José Luis Colcha. Me especializo en desarrollar
             aplicaciones web modernas, con un enfoque en ofrecer una excelente
             experiencia de usuario y diseños visuales atractivos.
