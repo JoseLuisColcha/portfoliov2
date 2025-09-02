@@ -1,11 +1,6 @@
-import { useState } from 'react'
-import { AiOutlineMenu } from 'react-icons/ai'
-import { RxCross1 } from 'react-icons/rx'
 import { MobileMenu } from './MobileMenu'
 
 export const NavBar = () => {
-  const [isOpen, setIsOpen] = useState(false)
-
   const menuProps = [
     {
       url: '#inicio',
@@ -23,10 +18,6 @@ export const NavBar = () => {
       url: '#proyectos',
       text: 'PROYECTOS',
     },
-    {
-      url: '#contacto',
-      text: 'CONTACTO',
-    },
   ]
 
   return (
@@ -36,24 +27,11 @@ export const NavBar = () => {
         <img src="/icons/jlc-logo.svg" alt="monograma" />
       </div>
 
-      {/* MOBILE MENU */}
-      {isOpen ? (
-        <RxCross1
-          className="size-8 cursor-pointer lg:hidden absolute right-0 hover:text-brand hover:rotate-90 transition-all duration-300"
-          onClick={() => setIsOpen(false)}
-        />
-      ) : (
-        <AiOutlineMenu
-          className="text-white size-8 lg:hidden flex absolute right-0 cursor-pointer hover:text-brand hover:-rotate-y-180 transition-all duration-400"
-          onClick={() => setIsOpen(true)}
-        />
-      )}
-
-      <MobileMenu isOpen={isOpen} />
+      <MobileMenu />
 
       {/* MENU DESKTOP */}
       <section className="hidden lg:flex justify-center items-center h-full w-full relative">
-        {/* NAVBAR */}
+        {/* LINKS */}
         <div className="relative h-full w-[500px] ">
           <div className="absolute flex justify-around items-center inset-0 ">
             <ul className="flex space-x-8 text-white font-inter text-xs">
@@ -69,6 +47,7 @@ export const NavBar = () => {
               ))}
             </ul>
           </div>
+
           <svg
             width="100%"
             height="100%"

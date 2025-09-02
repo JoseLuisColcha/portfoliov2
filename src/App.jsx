@@ -1,11 +1,13 @@
+import { AboutMe } from './components/Aboutme'
 import { HeroSection } from './components/HeroSection'
 import { NavBar } from './components/NavBar'
 
 function App() {
   return (
-    <div className="h-screen mx-[10vw] sm:mx-[10vw] md:mx-[11vw] lg:mx-[12.8vw] flex-center ">
+    <div className="min-h-screen px-[2vw] sm:px-[10vw] md:px-[11vw] lg:px-[12.8vw] flex-center flex-col space-y-50">
       <NavBar />
       <HeroSection />
+      <AboutMe />
     </div>
   )
 }
