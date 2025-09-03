@@ -5,7 +5,7 @@ import { useState } from 'react'
 export const MobileMenu = () => {
   const [isOpen, setIsOpen] = useState(false)
 
-  const menuProps = [
+  const MENU_PROPS = [
     {
       url: '#inicio',
       text: 'INICIO',
@@ -49,7 +49,7 @@ export const MobileMenu = () => {
       >
         <div>
           <ul className="flex flex-col mt-8 space-y-6  font-inter text-xs sm:text-base px-11">
-            {menuProps.map((item, index) => (
+            {MENU_PROPS.map((item, index) => (
               <li key={index}>
                 <a
                   href={item.url}
