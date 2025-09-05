@@ -1,5 +1,5 @@
 export const ExperienceCard = () => {
-  const EXPERIENCE_PROPS = [
+  const EXPERIENCE_OPTIONS = [
     {
       title: 'DISEÑADOR WEB | FREELANCE',
       company: 'ADUANERO HY - SISTEMA CLASIFICADOR ADUANERO',
@@ -24,31 +24,31 @@ export const ExperienceCard = () => {
   ]
 
   return (
-    <div className="py-15">
+    <>
       <span className="border-l-2 border-black/20 dark:border-white/15 ml-4 pl-6 flex flex-col gap-10 mx-10 sm:mx-10 md:mx-20 lg:mx-40">
-        {EXPERIENCE_PROPS.map((exp, index) => (
+        {EXPERIENCE_OPTIONS.map((experienceOption, index) => (
           <div
             key={index}
-            className="before:absolute before:size-3.5 before:bg-brand-red before:rounded-full before:mt-13 before:-ml-11 bg-brand/10 font-inter  border border-black/10 dark:border-brand/10 backdrop-blur-sm duration-300 transition-shadow ml-3"
+            className="before:absolute before:size-3.5 before:bg-brand-red before:rounded-full before:mt-13 before:-ml-11 bg-brand/10 font-inter border border-black/10 backdrop-blur-sm ml-3"
           >
             <h6 className="px-12 pt-12 text-[12px] sm:text-[13px] text-brand/60">
-              {exp.duration}
+              {experienceOption.duration}
             </h6>
 
             <h4 className="px-12 pb-[16px] text-brand  text-[16px] sm:text-[18px]">
-              {exp.title}
+              {experienceOption.title}
             </h4>
 
             <h4 className="px-12  text-[15px] sm:text-[16px] pb-[2px]">
-              {exp.company}
+              {experienceOption.company}
             </h4>
 
             <p className="px-12 pb-10 text-white/75 text-[14px] sm:text-[15px]">
-              {exp.description}
+              {experienceOption.description}
             </p>
           </div>
         ))}
       </span>
-    </div>
+    </>
   )
 }

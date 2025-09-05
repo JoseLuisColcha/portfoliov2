@@ -1,7 +1,7 @@
 import { MobileMenu } from './MobileMenu'
 
 export const Navbar = () => {
-  const MENU_PROPS = [
+  const MENU_OPTIONS = [
     {
       url: '#inicio',
       text: 'INICIO',
@@ -35,13 +35,13 @@ export const Navbar = () => {
         <div className="relative h-full w-[500px] ">
           <div className="absolute flex justify-around items-center inset-0 ">
             <ul className="flex space-x-8 text-white font-inter text-xs">
-              {MENU_PROPS.map((item, index) => (
+              {MENU_OPTIONS.map((menuOption, index) => (
                 <li key={index}>
                   <a
-                    href={item.url}
+                    href={menuOption.url}
                     className="hover:text-brand transition-all duration-300"
                   >
-                    {item.text}
+                    {menuOption.text}
                   </a>
                 </li>
               ))}

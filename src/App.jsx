@@ -2,6 +2,7 @@ import { AboutMe } from './components/Aboutme'
 import { Experience } from './components/Experience'
 import { HeroSection } from './components/HeroSection'
 import { Navbar } from './components/Navbar'
+import { Projects } from './components/Projects'
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <HeroSection />
       <AboutMe />
       <Experience />
+      <Projects /> 
     </div>
   )
 }

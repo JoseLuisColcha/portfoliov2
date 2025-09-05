@@ -2,7 +2,7 @@ import { TitleSection } from './TitleSection'
 
 export const AboutMe = () => {
   return (
-    <div id="sobre-mi" className="col-center gap-8 z-30">
+    <div id="sobre-mi" className="col-center z-30">
       <TitleSection title="ACERCA DE MI" subtitle="TRAYECTORIA" />
 
       <p className="font-inter px-10 sm:px-10 md:px-20 lg:px-40 text-start text-sm sm:text-base">
