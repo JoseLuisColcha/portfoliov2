@@ -24,7 +24,7 @@ export const Navbar = () => {
     <nav className="fixed top-4 inset-x-[10vw] sm:inset-x-[10vw] md:inset-x-[11vw] lg:inset-x-[12.8vw] h-12 z-50">
       {/* LOGO */}
       <div className="absolute left-0 h-full w-[70px] flex-center">
-        <img src="/icons/jlc-logo.svg" alt="monograma" />
+        <img src="/icons/jlc-logo.svg" alt="logotipo" />
       </div>
 
       <MobileMenu />

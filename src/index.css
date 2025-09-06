@@ -47,3 +47,11 @@ body {
 @utility col-center {
     @apply flex flex-col justify-center items-center
 }
+
+@utility icon-hover {
+    @apply hover:text-brand-red transition-colors duration-300
+}
+
+@utility input-style {
+    @apply border border-brand/20 backdrop-blur-sm bg-brand/1 p-2 placeholder-brand/80 placeholder:text-xs focus:outline-none
+}
