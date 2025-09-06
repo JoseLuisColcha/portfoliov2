@@ -1,32 +1,10 @@
 import { AiOutlineMenu } from 'react-icons/ai'
 import { RxCross1 } from 'react-icons/rx'
 import { useState } from 'react'
+import { MENU_OPTIONS } from '../constants/menuOptions'
 
 export const MobileMenu = () => {
   const [isOpen, setIsOpen] = useState(false)
-
-  const MENU_OPTIONS = [
-    {
-      url: '#inicio',
-      text: 'INICIO',
-    },
-    {
-      url: '#sobre-mi',
-      text: 'SOBRE MI',
-    },
-    {
-      url: '#habilidades',
-      text: 'HABILIDADES',
-    },
-    {
-      url: '#proyectos',
-      text: 'PROYECTOS',
-    },
-    {
-      url: '#contacto',
-      text: 'CONTACTO',
-    },
-  ]
 
   return (
     <>

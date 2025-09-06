@@ -1,24 +1,8 @@
+import { MENU_OPTIONS } from '../constants/menuOptions'
 import { MobileMenu } from './MobileMenu'
 
 export const Navbar = () => {
-  const MENU_OPTIONS = [
-    {
-      url: '#inicio',
-      text: 'INICIO',
-    },
-    {
-      url: '#sobre-mi',
-      text: 'SOBRE MI',
-    },
-    {
-      url: '#habilidades',
-      text: 'HABILIDADES',
-    },
-    {
-      url: '#proyectos',
-      text: 'PROYECTOS',
-    },
-  ]
+
 
   return (
     <nav className="fixed top-4 inset-x-[10vw] sm:inset-x-[10vw] md:inset-x-[11vw] lg:inset-x-[12.8vw] h-12 z-50">

@@ -1,15 +1,15 @@
 export const HeroSection = () => {
   return (
-    <div id="inicio" className="w-full h-screen px-4">
-      <div className="absolute inset-x-0 bottom-30 sm:bottom-15 md:bottom-0 flex justify-center z-10">
+    <div id="inicio" className="w-full h-screen relative">
+      <div className="absolute inset-x-0 bottom-28 sm:bottom-15 md:bottom-0 flex justify-center z-10">
         <img
-          className="object-contain w-[300px] sm:w-[350px] md:w-[400px] "
+          className="object-contain w-[300px] sm:w-[350px] md:w-[400px]"
           src="/images/profile-photo.png"
           alt="una imagen de un hombre con lentes"
         />
       </div>
 
-      <div className="absolute inset-x-[10vw] sm:inset-x-[10vw] md:inset-x-[11vw] lg:inset-x-[12.8vw] bottom-0 space-y-6 z-20">
+      <div className="absolute bottom-0 space-y-6 z-20 inset-x-[8.4vw] sm:inset-x-0 md:inset-x-0">
         <section className="max-w-full sm:max-w-[40%] md:max-w-[40%] lg:max-w-[40%] space-y-3 mx-auto sm:mx-0">
           <p className="font-inter text-sm sm:text-base text-left">
             Hola, soy José Luis Colcha. Me especializo en desarrollar
@@ -43,7 +43,7 @@ export const HeroSection = () => {
         </section>
 
         <section className="flex flex-col mb-4">
-          <span className="font-druk text-center text-[15vw]/[80px] sm:text-[15.2vw]/[100px] md:text-[14.9vw]/[130px] lg:text-[14.3vw]/[170px] text-brand">
+          <span className="font-druk text-center text-[14.9vw]/[80px] sm:text-[15.2vw]/[100px] md:text-[14.9vw]/[130px] lg:text-[14.3vw]/[170px] text-brand">
             DESARROLLADOR DE SOFTWARE
           </span>
           <span className="font-free-script text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-brand-red flex justify-end">

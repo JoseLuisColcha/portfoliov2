@@ -3,7 +3,7 @@ import { TitleSection } from './TitleSection'
 
 export const Contact = () => {
   return (
-    <div className="w-full col-center">
+    <div className="w-full col-center mb-[600px] md:mb-[450px]">
       <TitleSection title="CONTACTO" subtitle="HABLEMOS" />
 
       <SocialNetworks />
