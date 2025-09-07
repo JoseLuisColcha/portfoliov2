@@ -4,7 +4,7 @@ import { MENU_OPTIONS } from '../constants/menuOptions'
 
 export const Footer = () => {
   return (
-    <footer className="absolute bottom-0 w-full  py-20 md:py-18 grid grid-cols-1 md:grid-cols-3  md:place-items-start md:justify-items-center bg-brand/10 font-inter backdrop-blur-sm gap-5 md:gap-0">
+    <footer className="absolute bottom-0 w-full py-20 md:py-17 grid grid-cols-1 md:grid-cols-3  md:place-items-start md:justify-items-center bg-brand/10 font-inter backdrop-blur-sm gap-5 md:gap-0">
       {/* NAVEGACION */}
       <section className="flex flex-col gap-1 md:gap-2 order-3 md:order-1 items-center md:items-start">
         <h6 className="text-[16px] mb-0 md:mb-2">NAVEGACIÓN</h6>

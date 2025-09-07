@@ -5,9 +5,9 @@ export const Navbar = () => {
 
 
   return (
-    <nav className="fixed top-4 inset-x-[10vw] sm:inset-x-[10vw] md:inset-x-[11vw] lg:inset-x-[12.8vw] h-12 z-50">
+    <nav className="fixed top-4 inset-x-[3vw] h-12 z-50">
       {/* LOGO */}
-      <div className="absolute left-0 h-full w-[70px] flex-center">
+      <div className="absolute left-0 h-full w-[60px] sm:w-[70px] flex-center">
         <img src="/icons/jlc-logo.svg" alt="logotipo" />
       </div>
 

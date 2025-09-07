@@ -1,9 +1,12 @@
 export const HeroSection = () => {
   return (
-    <div id="inicio" className="w-full h-screen relative">
-      <div className="absolute inset-x-0 bottom-28 sm:bottom-15 md:bottom-0 flex justify-center z-10">
+    <div
+      id="inicio"
+      className="w-full h-screen relative"
+    >
+      <div className="absolute inset-x-0 sm:bottom-15 top-20 sm:top-0 md:bottom-0 flex justify-center z-10">
         <img
-          className="object-contain w-[300px] sm:w-[350px] md:w-[400px]"
+          className="object-contain w-[360px] sm:w-[360px] md:w-[400px]"
           src="/images/profile-photo.png"
           alt="una imagen de un hombre con lentes"
         />
@@ -43,7 +46,7 @@ export const HeroSection = () => {
         </section>
 
         <section className="flex flex-col mb-4">
-          <span className="font-druk text-center text-[14.9vw]/[80px] sm:text-[15.2vw]/[100px] md:text-[14.9vw]/[130px] lg:text-[14.3vw]/[170px] text-brand">
+          <span className="font-druk text-center text-[14.9vw]/[12vw] sm:text-[15.2vw]/[12vw] md:text-[14.9vw]/[12vw] lg:text-[14.3vw]/[12vw] text-brand">
             DESARROLLADOR DE SOFTWARE
           </span>
           <span className="font-free-script text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-brand-red flex justify-end">

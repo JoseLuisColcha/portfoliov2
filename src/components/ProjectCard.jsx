@@ -5,7 +5,7 @@ import { TbWorldWww } from 'react-icons/tb'
 export const ProjectCard = () => {
   const PROJECT_OPTIONS = [
     {
-      title: 'CÓCTELES WEB',
+      title: 'MOJITO CÓCTELES ',
       description:
         'Un sistema web interactivo que invita a los usuarios a descubrir cócteles de manera sencilla, con imágenes llamativas y una experiencia visual amigable.',
       tags: ['REACT', 'TAILWIND CSS', 'GSAP'],
@@ -114,7 +114,7 @@ export const ProjectCard = () => {
             </section>
 
             {/* BUTTONS */}
-            <section className="flex gap-4 justify-center text-xs">
+            <section className="flex gap-4 justify-center text-xs mt-3">
               <a
                 href={projectOption.code_url || projectOption.design_url}
                 target="_blank"
