@@ -119,7 +119,7 @@ export const ProjectCard = () => {
                 href={projectOption.code_url || projectOption.design_url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-4 px-4 py-2 border border-brand  text-brand hover:bg-orange-900 hover:text-white transition-all duration-300 flex flex-row items-center gap-2"
+                className="mt-4 px-4 py-2 sm:py-[10px] border border-brand  text-brand hover:bg-orange-900 hover:text-white transition-all duration-300 flex flex-row items-center gap-2"
               >
                 {projectOption.code_url ? (
                   <FaGithub className="w-4 h-4" />
@@ -134,7 +134,7 @@ export const ProjectCard = () => {
                 href={projectOption.demo_url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex flex-row items-center gap-2 mt-4 px-4 py-2  text-btn-txt hover:text-white bg-brand hover:bg-brand-red  transition-all duration-300"
+                className="flex flex-row items-center gap-2 mt-4 px-4 py-2 sm:py-[10px]  text-btn-txt hover:text-white bg-brand hover:bg-brand-red transition-all duration-300"
               >
                 <TbWorldWww className="w-4 h-4" />
                 <h6>VER DEMO</h6>

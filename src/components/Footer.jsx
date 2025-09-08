@@ -11,8 +11,9 @@ export const Footer = () => {
 
         {/* LINKS */}
         <div className="flex md:flex-col gap-2 sm:gap-4 md:gap-2 text-[13px] text-brand ">
-          {MENU_OPTIONS.map((menuOption) => (
+          {MENU_OPTIONS.map((menuOption, index) => (
             <a
+              key={index}
               href={menuOption.url}
               className="hover:text-brand-red transition-colors duration-200 cursor-pointer "
             >
