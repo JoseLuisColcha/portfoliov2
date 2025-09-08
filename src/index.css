@@ -3,12 +3,14 @@
 
 @font-face {
     font-family: Druk;
-    src: url('/fonts/Druk.otf');
+    src: url('/fonts/Druk.woff2') format('woff2'), url('/fonts/Druk.woff') format('woff');
+    font-display: swap;
 }
 
 @font-face {
     font-family: FreeScript;
-    src: url('/fonts/FreeScript.ttf');
+    src: url('/fonts/FreeScript.woff2') format('woff2'), url('/fonts/FreeScript.woff2') format('woff');
+    font-display: swap;
 }
 
 @theme {
@@ -18,9 +20,6 @@
     --color-brand-red: #BC2145;
     --color-brand: #DAC5A7;
     --color-btn-txt: #0E0E0E;
-    --breakpoint-xs: 35rem;
-    --breakpoint-2xl: 100rem;
-    --breakpoint-3xl: 120rem;
 
 
 }

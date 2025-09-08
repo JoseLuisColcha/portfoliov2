@@ -4,11 +4,18 @@ export const HeroSection = () => {
   return (
     <div id="inicio" className="w-full h-screen relative">
       {/* HERO IMAGEN */}
-      <div className="absolute inset-x-0 sm:bottom-15 top-20 sm:top-0 md:bottom-0 flex justify-center z-10">
+      <div className="absolute inset-x-0 sm:bottom-15 top-20 md:bottom-0 flex justify-center z-10">
         <img
           className="object-contain w-[360px] sm:w-[360px] md:w-[400px]"
-          src="/images/profile-photo.png"
+          src="/images/profile-photo-desktop.webp"
+          srcSet="
+    /images/profile-photo-mobile.webp 360w,
+    /images/profile-photo-desktop.webp 400w    
+  "
+          sizes="(max-width: 640px) 360px, 400px"
           alt="una imagen de un hombre con lentes"
+          loading="eager"
+          fetchPriority="high"
         />
       </div>
 
