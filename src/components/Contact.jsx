@@ -1,28 +1,69 @@
-import { PrimaryButton } from './PrimaryButton'
 import { SocialNetworks } from './SocialNetworks'
 import { TitleSection } from './TitleSection'
+import { SendButton } from './SendButton'
+import { FormInput } from './FormInput'
+import { FormTextarea } from './FormTextArea'
+import { useContactForm } from '../hooks/useContactForm'
 
 export const Contact = () => {
+  const {
+    form,
+    errors,
+    touched,
+    globalError,
+    handleChange,
+    handleBlur,
+    handleSubmit,
+  } = useContactForm()
+
   return (
-    <div id='contacto' className="w-full col-center mb-[570px] md:mb-[480px]">
+    <div id="contacto" className="w-full col-center mb-[570px] md:mb-[480px]">
       <TitleSection title="CONTACTO" subtitle="HABLEMOS" />
-
       <SocialNetworks />
+
       <div className="bg-brand/10 font-inter border border-brand/15 backdrop-blur-sm px-8 py-12 w-[75vw] sm:w-[450px] mt-4">
-        <h1 className=" text-2xl text-brand">Tu mensaje aquí!</h1>
+        <h1 className="text-2xl text-brand">Tu mensaje aquí!</h1>
 
-        <form action="" className="flex flex-col gap-3 mt-4 ">
-          <input type="text" placeholder="NOMBRE" className="input-style" />
-          <input type="email" placeholder="EMAIL" className="input-style" />
-
-          <textarea className="input-style pb-14" placeholder="MENSAJE" />
-
-          <PrimaryButton
-            href="#"
-            className="py-[14px]"
-            valuesPolygon="0 0, 95% 0, 100% 35%, 100% 100%, 5% 100%, 0% 65%"
-            title="ENVIAR MENSAJE"
+        <form onSubmit={handleSubmit} className="flex flex-col gap-3 mt-4">
+          <FormInput
+            type="text"
+            name="name"
+            placeholder="NOMBRE"
+            value={form.name}
+            onChange={handleChange}
+            onBlur={handleBlur}
+            error={errors.name}
+            touched={touched.name}
           />
+
+          <FormInput
+            type="email"
+            name="email"
+            placeholder="EMAIL"
+            value={form.email}
+            onChange={handleChange}
+            onBlur={handleBlur}
+            error={errors.email}
+            touched={touched.email}
+          />
+
+          <FormTextarea
+            name="message"
+            placeholder="MENSAJE"
+            value={form.message}
+            onChange={handleChange}
+            onBlur={handleBlur}
+            error={errors.message}
+            touched={touched.message}
+          />
+
+          <SendButton />
+
+          {globalError && (
+            <p className="font-inter text-red-600 text-sm font-medium mt-2">
+              {globalError}
+            </p>
+          )}
         </form>
       </div>
     </div>

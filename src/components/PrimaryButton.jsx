@@ -1,13 +1,13 @@
-export const PrimaryButton = ({ href, className, valuesPolygon, title }) => {
+export const PrimaryButton = () => {
   return (
     <a
-      href={href}
-      className={`bg-brand font-inter text-xs text-btn-txt text-center cursor-pointer hover:bg-brand-red hover:text-white transition-colors duration-300 ${className}`}
+      href="#contacto"
+      className="noutched-btn absolute right-0 h-full w-[136px] py-4"
       style={{
-        clipPath: `polygon(${valuesPolygon})`,
+        clipPath: 'polygon(0 0, 85% 0, 100% 35%, 100% 100%, 15% 100%, 0 65%)',
       }}
     >
-      {title}
+      CONTÁCTAME
     </a>
   )
 }

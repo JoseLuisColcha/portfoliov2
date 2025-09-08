@@ -57,3 +57,11 @@ body {
 @utility input-style {
     @apply border border-brand/20 backdrop-blur-sm bg-brand/1 p-2 placeholder-brand/80 placeholder:text-xs focus:outline-none
 }
+
+@utility noutched-btn {
+    @apply bg-brand font-inter text-xs text-btn-txt text-center cursor-pointer hover:bg-brand-red hover:text-white transition-colors duration-300
+}
+
+@utility error-txt {
+    @apply font-inter text-red-500 text-sm mt-1
+}
