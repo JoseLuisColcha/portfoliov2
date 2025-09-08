@@ -24,16 +24,20 @@ export const Navbar = () => {
         <div className="relative h-full w-[500px] ">
           <div className="absolute flex justify-around items-center inset-0 ">
             <ul className="flex space-x-8 text-white font-inter text-xs">
-              {MENU_OPTIONS.map((menuOption, index) => (
-                <li key={index}>
-                  <a
-                    href={menuOption.url}
-                    className="hover:text-brand transition-all duration-300"
-                  >
-                    {menuOption.text}
-                  </a>
-                </li>
-              ))}
+              {MENU_OPTIONS.map((menuOption, index) => {
+                if (menuOption.text !== 'CONTACTO') {
+                  return (
+                    <li key={index}>
+                      <a
+                        href={menuOption.url}
+                        className="hover:text-brand transition-all duration-300"
+                      >
+                        {menuOption.text}
+                      </a>
+                    </li>
+                  )
+                }
+              })}
             </ul>
           </div>
 

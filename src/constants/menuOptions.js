@@ -8,7 +8,7 @@ export const MENU_OPTIONS = [
     text: 'SOBRE MI',
   },
   {
-    url: '#sobre-mi',
+    url: '#experiencia',
     text: 'EXPERIENCIA',
   },
 
@@ -19,5 +19,9 @@ export const MENU_OPTIONS = [
   {
     url: '#proyectos',
     text: 'PROYECTOS',
+  },
+  {
+    url: '#contacto',
+    text: 'CONTACTO',
   },
 ]

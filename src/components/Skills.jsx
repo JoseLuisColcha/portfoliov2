@@ -181,7 +181,7 @@ export const Skills = () => {
   ]
 
   return (
-    <div className="col-center px-[8vw] sm:px-0">
+    <div id="habilidades" className="col-center px-[8vw] sm:px-0">
       <TitleSection title="HABILIDADES" subtitle="MI STACK" />
 
       <section className="grid grid-cols-1 md:grid-cols-2 gap-8">

@@ -6,17 +6,21 @@ import { MENU_OPTIONS } from '../constants/menuOptions'
 export const MobileMenu = () => {
   const [isOpen, setIsOpen] = useState(false)
 
+  const handleClickMenu = () => {
+    setIsOpen((prevIsOpen) => !prevIsOpen)
+  }
+
   return (
     <>
       {isOpen ? (
         <RxCross1
           className="size-7 sm:size-8 cursor-pointer lg:hidden absolute right-0 hover:text-brand hover:rotate-90 transition-all duration-300 z-60"
-          onClick={() => setIsOpen(false)}
+          onClick={handleClickMenu}
         />
       ) : (
         <AiOutlineMenu
           className="text-white size-7 sm:size-8 lg:hidden flex absolute right-0 cursor-pointer hover:text-brand hover:-rotate-y-180 transition-all duration-400 z-60"
-          onClick={() => setIsOpen(true)}
+          onClick={handleClickMenu}
         />
       )}
 
@@ -32,6 +36,7 @@ export const MobileMenu = () => {
                 <a
                   href={menuOption.url}
                   className="hover:text-brand transition-all transition-duration-300"
+                  onClick={() => setIsOpen(false)}
                 >
                   {menuOption.text}
                 </a>
