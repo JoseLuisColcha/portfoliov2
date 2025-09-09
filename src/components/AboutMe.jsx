@@ -1,6 +1,8 @@
 import { TitleSection } from './TitleSection'
 
+
 export const AboutMe = () => {
+
   return (
     <div id="sobre-mi" className="col-center">
       <TitleSection title="ACERCA DE MI" subtitle="TRAYECTORIA" />

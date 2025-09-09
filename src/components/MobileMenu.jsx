@@ -11,7 +11,7 @@ export const MobileMenu = () => {
   }
 
   return (
-    <>
+    <div className="header-item">
       {isOpen ? (
         <RxCross1
           className="size-7 sm:size-8 cursor-pointer lg:hidden absolute right-0 hover:text-brand hover:rotate-90 transition-all duration-300 z-60"
@@ -25,7 +25,7 @@ export const MobileMenu = () => {
       )}
 
       <div
-        className={`fixed top-16 right-0 h-full w-60 sm:w-90 bg-black shadow-lg transform transition-transform duration-300 z-50 lg:hidden ${
+        className={`fixed top-16 right-0 h-screen w-60 sm:w-90 bg-black shadow-lg transform transition-transform duration-300 z-50 lg:hidden ${
           isOpen ? 'translate-x-0' : 'translate-x-full'
         }`}
       >
@@ -45,6 +45,6 @@ export const MobileMenu = () => {
           </ul>
         </div>
       </div>
-    </>
+    </div>
   )
 }

@@ -1,12 +1,12 @@
 export const SecondaryButtonSVG = () => {
   return (
-    <a
-      href="/docs/José_Luis_Colcha_CV.pdf"
-      download="José_Luis_Colcha_CV.pdf"
-      className="flex justify-center sm:justify-start"
-    >
-      <div className="relative h-12 w-32 sm:h-14 sm:w-36">
-        <span className="font-inter text-xs sm:text-sm text-white absolute inset-0 flex items-center justify-center">
+    <div className=" flex justify-center sm:justify-start">
+      <a
+        href="/docs/José_Luis_Colcha_CV.pdf"
+        download="José_Luis_Colcha_CV.pdf"
+        className="relative h-12 w-32 sm:h-14 sm:w-36"
+      >
+        <span className="hero-intro-item font-inter text-xs sm:text-sm text-white absolute inset-0 flex items-center justify-center">
           DESCARGAR CV
         </span>
 
@@ -110,7 +110,7 @@ export const SecondaryButtonSVG = () => {
             </linearGradient>
           </defs>
         </svg>
-      </div>
-    </a>
+      </a>
+    </div>
   )
 }
