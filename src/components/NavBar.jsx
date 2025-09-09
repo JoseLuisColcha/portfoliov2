@@ -7,14 +7,18 @@ export const Navbar = () => {
   return (
     <header className="fixed top-4 inset-x-[3vw] h-12 z-40">
       {/* LOGO */}
-      <div className="absolute left-0 h-full w-[60px] sm:w-[70px] flex-center">
+      <a
+        href="/"
+        className="absolute left-0 h-full w-[60px] sm:w-[70px] flex-center z-40"
+      >
         <img
           src="/icons/jlc-logo.svg"
           alt="logotipo"
           loading="eager"
           fetchPriority="high"
+          className="cursor-pointer"
         />
-      </div>
+      </a>
 
       <MobileMenu />
 

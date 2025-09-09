@@ -10,7 +10,7 @@ export const Footer = () => {
         <h6 className="text-[16px] mb-0 md:mb-2">NAVEGACIÓN</h6>
 
         {/* LINKS */}
-        <div className="flex md:flex-col gap-2 sm:gap-4 md:gap-2 text-[13px] text-brand ">
+        <div className="flex flex-col sm:flex-row md:flex-col gap-2 sm:gap-4 md:gap-2 text-[13px] text-brand ">
           {MENU_OPTIONS.map((menuOption, index) => (
             <a
               key={index}
