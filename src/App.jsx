@@ -15,7 +15,7 @@ function App() {
 
   return (
     <ReactLenis root options={{ autoRaf: false }} ref={lenisRef}>
-      <div className="relative min-h-screen px-[2vw] sm:px-[10vw] md:px-[11vw] lg:px-[12.8vw] flex-center flex-col overflow-hidden">
+      <main className="relative min-h-screen px-[2vw] sm:px-[10vw] md:px-[11vw] lg:px-[12.8vw] flex-center flex-col overflow-hidden gap-[15vw] md:gap-[9vw]">
         <Navbar />
         <HeroSection />
         <AboutMe />
@@ -26,7 +26,7 @@ function App() {
         <Footer />
 
         <Toaster position="top-center" reverseOrder={false} />
-      </div>
+      </main>
     </ReactLenis>
   )
 }

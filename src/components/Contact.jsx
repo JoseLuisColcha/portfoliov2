@@ -17,7 +17,10 @@ export const Contact = () => {
   } = useContactForm()
 
   return (
-    <div id="contacto" className="w-full col-center mb-[570px] md:mb-[480px]">
+    <section
+      id="contacto"
+      className="page-section w-full col-center mb-[680px] md:mb-[480px]"
+    >
       <TitleSection title="CONTACTO" subtitle="HABLEMOS" />
       <SocialNetworks />
 
@@ -66,6 +69,6 @@ export const Contact = () => {
           )}
         </form>
       </div>
-    </div>
+    </section>
   )
 }

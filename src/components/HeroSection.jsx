@@ -74,7 +74,7 @@ export const HeroSection = () => {
   }, [])
 
   return (
-    <div id="inicio" className="w-full h-screen relative">
+    <section id="inicio" className="page-section w-full h-screen relative">
       {/* HERO IMAGEN */}
       <div
         ref={imageRef}
@@ -127,6 +127,6 @@ export const HeroSection = () => {
           </h4>
         </section>
       </div>
-    </div>
+    </section>
   )
 }

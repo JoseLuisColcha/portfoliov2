@@ -181,14 +181,17 @@ export const Skills = () => {
   ]
 
   return (
-    <div id="habilidades" className="col-center px-[8vw] sm:px-0">
+    <section
+      id="habilidades"
+      className="page-section col-center px-[8vw] sm:px-0"
+    >
       <TitleSection title="HABILIDADES" subtitle="MI STACK" />
 
-      <section className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {SKILLS_OPTIONS.map((skill, index) => (
           <SkillsCard key={index} title={skill.title} skills={skill.items} />
         ))}
-      </section>
-    </div>
+      </div>
+    </section>
   )
 }

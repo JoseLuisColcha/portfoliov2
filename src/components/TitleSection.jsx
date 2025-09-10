@@ -1,6 +1,6 @@
 export const TitleSection = ({ title, subtitle }) => {
   return (
-    <div className="flex flex-col pt-[20vw] md:pt-[15vw] pb-[8vw] md:pb-[4vw]">
+    <div className="flex flex-col pt-[8vw] md:pt-[6vw] pb-[8vw] md:pb-[4vw]">
       <span className="font-free-script text-2xl sm:text-[4vw] md:text-[3vw] lg:text-[2.4vw] text-brand-red">
         {subtitle}
       </span>
@@ -10,3 +10,5 @@ export const TitleSection = ({ title, subtitle }) => {
     </div>
   )
 }
+
+// pt-[20vw] md:pt-[15vw]

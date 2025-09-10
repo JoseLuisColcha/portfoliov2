@@ -1,12 +1,39 @@
+import { useGSAP } from '@gsap/react'
+import gsap from 'gsap'
+import { useRef } from 'react'
+
 export const SecondaryButtonSVG = () => {
+  const { contextSafe } = useGSAP()
+  const bgRef = useRef(null)
+
+  const handleMouseEnter = contextSafe(() => {
+    gsap.to(bgRef.current, {
+      opacity: 0,
+      duration: 0.5,
+      ease: 'power2.out',
+    })
+  })
+
+  const handleMouseLeave = contextSafe(() => {
+    gsap.to(bgRef.current, {
+      opacity: 1,
+      duration: 0.5,
+      ease: 'power2.out',
+    })
+  })
+
+  useGSAP(() => {}, [])
+
   return (
     <div className=" flex justify-center sm:justify-start">
       <a
         href="/docs/José_Luis_Colcha_CV.pdf"
         download="José_Luis_Colcha_CV.pdf"
-        className="relative h-12 w-32 sm:h-14 sm:w-36"
+        className="relative h-12 w-32 sm:h-14 sm:w-36 active:scale-90 duration-300 transition-all"
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
       >
-        <span className="hero-intro-item font-inter text-xs sm:text-sm text-white absolute inset-0 flex items-center justify-center">
+        <span className="hero-intro-item font-inter text-xs sm:text-sm text-white absolute inset-0 flex items-center justify-center hover:text-brand">
           DESCARGAR CV
         </span>
 
@@ -31,6 +58,7 @@ export const SecondaryButtonSVG = () => {
           </foreignObject>
           <g filter="url(#b1)">
             <path
+              ref={bgRef}
               d="M462.915 2H2V137L95.5111 205H552V74L462.915 2Z"
               fill="url(#c1)"
             />

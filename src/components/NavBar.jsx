@@ -1,11 +1,16 @@
-import { useGSAP } from '@gsap/react'
-import { MENU_OPTIONS } from '../constants/menuOptions'
+import { LINKS_OPTIONS } from '../constants/linksOptions'
 import { MobileMenu } from './MobileMenu'
 import { NavSVG } from './NavSVG'
 import { PrimaryButton } from './PrimaryButton'
 import gsap from 'gsap'
+import { useGSAP } from '@gsap/react'
+import { useAnimatedLink } from '../hooks/useAnimatedLink'
+import { useActiveSection } from '../hooks/useActiveSection'
 
 export const Navbar = () => {
+  const { handleMouseEnter, handleMouseLeave } = useAnimatedLink()
+  const { activeSection } = useActiveSection()
+
   useGSAP(() => {
     const isFirefox = navigator.userAgent.toLowerCase().includes('firefox')
 
@@ -49,18 +54,33 @@ export const Navbar = () => {
         {/* LINKS */}
         <div className="relative h-full w-[500px] ">
           <div className="absolute flex justify-around items-center inset-0 ">
-            <ul className="header-item flex space-x-8 text-white font-inter text-xs">
-              {MENU_OPTIONS.map((menuOption, index) => {
-                if (menuOption.text !== 'CONTACTO') {
+            <ul
+              id="desktop-navbar-links"
+              className="header-item flex space-x-8 text-white font-inter text-xs"
+            >
+              {LINKS_OPTIONS.map((link) => {
+                if (link.label !== 'CONTACTO') {
                   return (
-                    <li key={index}>
-                      <a
-                        href={menuOption.url}
-                        className="hover:text-brand transition-all duration-300"
-                      >
-                        {menuOption.text}
-                      </a>
-                    </li>
+                    <a
+                      key={link.id}
+                      href={`#${link.id}`}
+                      className={`hover:text-brand transition-all duration-300 overflow-hidden h-[23px] ${
+                        activeSection === link.id
+                          ? 'text-brand font-semibold'
+                          : 'text-white'
+                      }`}
+                      onMouseEnter={handleMouseEnter}
+                      onMouseLeave={handleMouseLeave}
+                    >
+                      <div className="text-wrapper flex flex-col">
+                        <span className="text-center h-[23px] flex-center">
+                          {link.label}
+                        </span>
+                        <span className="text-center h-[23px] flex-center">
+                          {link.label}
+                        </span>
+                      </div>
+                    </a>
                   )
                 }
               })}

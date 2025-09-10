@@ -1,7 +1,7 @@
 import { AiOutlineMenu } from 'react-icons/ai'
 import { RxCross1 } from 'react-icons/rx'
 import { useState } from 'react'
-import { MENU_OPTIONS } from '../constants/menuOptions'
+import { LINKS_OPTIONS } from '../constants/linksOptions'
 
 export const MobileMenu = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -31,14 +31,14 @@ export const MobileMenu = () => {
       >
         <div>
           <ul className="flex flex-col mt-8 space-y-6  font-inter text-xs sm:text-base px-11">
-            {MENU_OPTIONS.map((menuOption, index) => (
-              <li key={index}>
+            {LINKS_OPTIONS.map((link) => (
+              <li key={link.id}>
                 <a
-                  href={menuOption.url}
+                  href={`#${link.id}`}
                   className="hover:text-brand transition-all transition-duration-300"
                   onClick={() => setIsOpen(false)}
                 >
-                  {menuOption.text}
+                  {link.label}
                 </a>
               </li>
             ))}

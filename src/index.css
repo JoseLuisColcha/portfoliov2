@@ -59,7 +59,7 @@ body {
 }
 
 @utility noutched-btn {
-    @apply bg-brand font-inter text-xs text-btn-txt text-center cursor-pointer hover:bg-brand-red hover:text-white transition-colors duration-300
+    @apply bg-brand font-inter text-xs text-btn-txt text-center cursor-pointer hover:bg-brand-red hover:text-white transition-colors duration-500
 }
 
 @utility error-txt {

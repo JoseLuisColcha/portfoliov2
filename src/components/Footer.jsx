@@ -1,6 +1,6 @@
 import { MdOutlineMail } from 'react-icons/md'
 import { TbWorld } from 'react-icons/tb'
-import { MENU_OPTIONS } from '../constants/menuOptions'
+import { LINKS_OPTIONS } from '../constants/linksOptions'
 
 export const Footer = () => {
   return (
@@ -11,13 +11,13 @@ export const Footer = () => {
 
         {/* LINKS */}
         <div className="flex flex-col sm:flex-row md:flex-col gap-2 sm:gap-4 md:gap-2 text-[13px] text-brand ">
-          {MENU_OPTIONS.map((menuOption, index) => (
+          {LINKS_OPTIONS.map((link) => (
             <a
-              key={index}
-              href={menuOption.url}
+              key={link.id}
+              href={`#${link.id}`}
               className="hover:text-brand-red transition-colors duration-200 cursor-pointer "
             >
-              {menuOption.text}
+              {link.label}
             </a>
           ))}
         </div>
