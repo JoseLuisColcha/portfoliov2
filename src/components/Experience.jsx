@@ -1,4 +1,4 @@
-import { ExperienceCard } from './ExperienceCard'
+import { ExperienceCards } from './ExperienceCards'
 import { TitleSection } from './TitleSection'
 
 export const Experience = () => {
@@ -8,7 +8,7 @@ export const Experience = () => {
         title="EXPERIENCIA"
         subtitle="MI RECORRIDO"
       />
-      <ExperienceCard />
+      <ExperienceCards />
     </section>
   )
 }

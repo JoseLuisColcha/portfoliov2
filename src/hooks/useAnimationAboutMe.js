@@ -9,7 +9,7 @@ export const useAnimationAboutMe = () => {
     gsap.from(paragraphRef.current, {
       y: 40,
       opacity: 0,
-      filter: 'blur(6px)',
+      filter: 'blur(10px)',
       duration: 1,
       ease: 'power2.out',
       delay: 0.5,
