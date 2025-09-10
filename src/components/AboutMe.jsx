@@ -1,13 +1,17 @@
+import { useAnimationAboutMe } from '../hooks/useAnimationAboutMe'
 import { TitleSection } from './TitleSection'
 
-
 export const AboutMe = () => {
+  const { paragraphRef } = useAnimationAboutMe()
 
   return (
     <section id="sobre-mi" className="page-section col-center">
       <TitleSection title="ACERCA DE MI" subtitle="TRAYECTORIA" />
 
-      <p className="font-inter px-10 sm:px-10 md:px-20 lg:px-40 text-start text-sm sm:text-base">
+      <p
+        ref={paragraphRef}
+        className="font-inter px-10 sm:px-10 md:px-20 lg:px-40 text-start text-sm sm:text-base"
+      >
         Soy un apasionado por la tecnología y el diseño, graduado en Desarrollo
         de Software en la EPN, tras mis estudios, comencé mi camino como
         freelance, donde aprendí a gestionar proyectos de principio a fin y a
