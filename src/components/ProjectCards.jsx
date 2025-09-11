@@ -1,8 +1,13 @@
-import { FaGithub } from 'react-icons/fa'
-import { FaFigma } from 'react-icons/fa'
-import { TbWorldWww } from 'react-icons/tb'
+import { useRef } from 'react'
+import { ProjectItem } from './ProjectItem'
+import gsap from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import { useGSAP } from '@gsap/react'
+gsap.registerPlugin(ScrollTrigger)
 
-export const ProjectCard = () => {
+export const ProjectCards = () => {
+  const projectCardsRef = useRef([])
+
   const PROJECT_OPTIONS = [
     {
       title: 'MOJITO CÓCTELES ',
@@ -79,70 +84,34 @@ export const ProjectCard = () => {
       code_url: 'https://github.com/JoseLuisColcha/portfoliov2',
     },
   ]
+
+  useGSAP(() => {
+    projectCardsRef.current.forEach((projectCard, index) => {
+      gsap.from(projectCard, {
+        opacity: 0,
+        x: index % 2 === 0 ? -100 : 100,
+        duration: 1.2,
+        filter: 'blur(10px)',
+        ease: 'power3.out',
+        scrollTrigger: {
+          trigger: projectCard,
+          start: 'top 85%',
+          end: 'top 50%', 
+        },
+      })
+    })
+  }, [])
+
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 w-full gap-8">
       {PROJECT_OPTIONS.map((projectOption, index) => (
-        <figure
+        <ProjectItem
           key={index}
-          className="bg-brand/10 font-inter border border-brand/15 backdrop-blur-sm grid grid-col-3 gap-4 h-auto"
-        >
-          <img
-            className="w-full h-50 object-cover"
-            src={projectOption.img}
-            alt="Una imagen de un sitio web"
-            loading="lazy"
-          />
-
-          <figcaption className="px-8 pb-6 flex flex-col justify-between">
-            <h2 className=" text-start pb-[4px] text-brand text-base sm:text-[18px]">
-              {projectOption.title}
-            </h2>
-
-            <p className="text-white/80 text-[14px] sm:text-[15px] font-light mb-1">
-              {projectOption.description}
-            </p>
-
-            {/* TAGS */}
-            <section className="flex flex-wrap content-start items-start gap-1.5 my-2">
-              {projectOption.tags.map((tag, index) => (
-                <span
-                  key={index}
-                  className="flex items-center border border-brand/20 backdrop-blur-sm bg-brand/1 px-2.5 h-6 text-xs font-medium text-brand"
-                >
-                  {tag}
-                </span>
-              ))}
-            </section>
-
-            {/* BUTTONS */}
-            <section className="flex gap-4 justify-center text-xs mt-3">
-              <a
-                href={projectOption.code_url || projectOption.design_url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-4 px-4 py-2 sm:py-[10px] border border-brand  text-brand hover:bg-orange-900 hover:text-white transition-all duration-300 flex flex-row items-center gap-2"
-              >
-                {projectOption.code_url ? (
-                  <FaGithub className="w-4 h-4" />
-                ) : (
-                  <FaFigma className="w-4 h-4" />
-                )}
-
-                <h6> {projectOption.code_url ? 'VER CÓDIGO' : 'VER DISEÑO'}</h6>
-              </a>
-
-              <a
-                href={projectOption.demo_url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex flex-row items-center gap-2 mt-4 px-4 py-2 sm:py-[10px]  text-btn-txt hover:text-white bg-brand hover:bg-brand-red transition-all duration-300"
-              >
-                <TbWorldWww className="w-4 h-4" />
-                <h6>VER DEMO</h6>
-              </a>
-            </section>
-          </figcaption>
-        </figure>
+          refValue={(projectElement) =>
+            (projectCardsRef.current[index] = projectElement)
+          }
+          projectOption={projectOption}
+        />
       ))}
     </div>
   )

@@ -1,4 +1,4 @@
-import { useRef, useEffect } from 'react'
+import { useRef } from 'react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { useGSAP } from '@gsap/react'
@@ -30,11 +30,11 @@ export const ExperienceCards = () => {
     },
   ]
 
-  const cardsRef = useRef([])
+  const experienceCardRef = useRef([])
 
   useGSAP(() => {
-    cardsRef.current.forEach((cardElement) => {
-      gsap.from(cardElement, {
+    experienceCardRef.current.forEach((experienceCard) => {
+      gsap.from(experienceCard, {
         rotationX: 90,
         opacity: 0,
         filter: 'blur(10px)',
@@ -42,7 +42,7 @@ export const ExperienceCards = () => {
         ease: 'back.out(1.7)',
 
         scrollTrigger: {
-          trigger: cardElement,
+          trigger: experienceCard,
           start: 'top 80%',
           toggleActions: 'play none none none',
         },
@@ -55,7 +55,9 @@ export const ExperienceCards = () => {
       {EXPERIENCE_OPTIONS.map((experienceOption, index) => (
         <div
           key={index}
-          ref={(cardElement) => (cardsRef.current[index] = cardElement)}
+          ref={(experienceElement) =>
+            (experienceCardRef.current[index] = experienceElement)
+          }
           className="relative before:absolute before:size-3.5 before:bg-brand-red before:rounded-full before:mt-13 before:-ml-11 bg-brand/10 font-inter border border-black/10 backdrop-blur-sm ml-3"
         >
           <h6 className="px-12 pt-12 text-[12px] sm:text-[13px] text-brand/60">

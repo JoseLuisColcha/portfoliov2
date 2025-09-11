@@ -1,4 +1,4 @@
-import { ProjectCard } from './ProjectCard'
+import { ProjectCards } from './ProjectCards'
 import { TitleSection } from './TitleSection'
 
 export const Projects = () => {
@@ -8,7 +8,7 @@ export const Projects = () => {
       className="page-section col-center px-[8vw] sm:px-0"
     >
       <TitleSection title="PROYECTOS" subtitle="MI PORTAFOLIO" />
-      <ProjectCard />
+      <ProjectCards />
     </section>
   )
 }
