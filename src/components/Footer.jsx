@@ -26,7 +26,7 @@ export const Footer = () => {
       {/* LOGOTIPO */}
       <section className="flex flex-col items-center gap-1 order-1 md:order-2">
         <img
-          src="/icons/jlc-logo.svg"
+          src="/images/jlc-logo.svg"
           alt="logotipo de la empresa"
           className="w-25 h-20"
         />

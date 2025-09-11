@@ -39,7 +39,7 @@ export const Navbar = () => {
         className="header-item absolute left-0 h-full w-[60px] sm:w-[70px] flex-center z-40"
       >
         <img
-          src="/icons/jlc-logo.svg"
+          src="/images/jlc-logo.svg"
           alt="logotipo"
           loading="eager"
           fetchPriority="high"
