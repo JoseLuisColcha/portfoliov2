@@ -23,7 +23,6 @@ export const ProjectItem = ({ projectOption, refValue }) => {
           {projectOption.description}
         </p>
 
-        {/* TAGS */}
         <ProjectCardTags projectOptionTags={projectOption.tags} />
 
         <ProjectCardButtons projectOption={projectOption} />

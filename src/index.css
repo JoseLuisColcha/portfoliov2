@@ -51,7 +51,7 @@ body {
 }
 
 @utility icon-hover {
-    @apply hover:text-brand-red transition-colors duration-300
+    @apply hover:text-brand-red transition-colors duration-300 cursor-pointer
 }
 
 @utility input-style {
