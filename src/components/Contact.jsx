@@ -4,6 +4,9 @@ import { SendButton } from './SendButton'
 import { FormInput } from './FormInput'
 import { FormTextarea } from './FormTextArea'
 import { useContactForm } from '../hooks/useContactForm'
+import { useGSAP } from '@gsap/react'
+import { useRef } from 'react'
+import gsap from 'gsap'
 
 export const Contact = () => {
   const {
@@ -16,6 +19,22 @@ export const Contact = () => {
     handleSubmit,
   } = useContactForm()
 
+  const formRef = useRef()
+
+  useGSAP(() => {
+    gsap.from(formRef.current, {
+      y: 100,
+      opacity: 0,
+      duration: 1.3,
+      filter: 'blur(10px)',
+      ease: 'power2.out',
+      scrollTrigger: {
+        trigger: formRef.current,
+        start: 'top bottom',
+      },
+    })
+  }, [])
+
   return (
     <section
       id="contacto"
@@ -24,7 +43,10 @@ export const Contact = () => {
       <TitleSection title="CONTACTO" subtitle="HABLEMOS" />
       <SocialNetworks />
 
-      <div className="bg-brand/10 font-inter border border-brand/15 backdrop-blur-sm px-8 py-12 w-[75vw] sm:w-[450px] mt-4">
+      <div
+        ref={formRef}
+        className="bg-brand/10 font-inter border border-brand/15 backdrop-blur-sm px-8 py-12 w-[75vw] sm:w-[450px] mt-4"
+      >
         <h1 className="text-2xl text-brand">Tu mensaje aquí!</h1>
 
         <form onSubmit={handleSubmit} className="flex flex-col gap-3 mt-4">

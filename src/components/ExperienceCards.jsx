@@ -38,7 +38,7 @@ export const ExperienceCards = () => {
         rotationX: 90,
         opacity: 0,
         filter: 'blur(10px)',
-        duration: 1.3,
+        duration: 1.5,
         ease: 'back.out(1.7)',
 
         scrollTrigger: {
