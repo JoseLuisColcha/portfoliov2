@@ -6,11 +6,11 @@ import { Contact } from './components/Contact'
 import { Experience } from './components/Experience'
 import { Footer } from './components/Footer'
 import { HeroSection } from './components/HeroSection'
-import { Navbar } from './components/Navbar'
 import { Projects } from './components/Projects'
 import { Skills } from './components/Skills'
 import { useLenisGSAP } from './hooks/useLenisGSAP'
 import { LoaderPage } from './pages/LoaderPage'
+import { Navbar } from './components/Navbar'
 
 function App() {
   const { lenisRef } = useLenisGSAP()
