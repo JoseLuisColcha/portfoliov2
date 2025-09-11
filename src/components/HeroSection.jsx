@@ -35,19 +35,17 @@ export const HeroSection = () => {
     }
 
     //HERO TITLE
-    document.fonts.ready.then(() => {
-      const split = new SplitText(titleRef.current, { type: 'chars' })
+    const split = new SplitText(titleRef.current, { type: 'chars' })
 
-      gsap.from(split.chars, {
-        opacity: 0,
-        z: -200,
-        rotateX: -90,
-        duration: 1,
-        filter: 'blur(20px)',
-        ease: 'power4.out',
-        stagger: 0.05,
-        transformOrigin: 'center center -50',
-      })
+    gsap.from(split.chars, {
+      opacity: 0,
+      z: -200,
+      rotateX: -90,
+      duration: 1,
+      filter: 'blur(20px)',
+      ease: 'power4.out',
+      stagger: 0.05,
+      transformOrigin: 'center center -50',
     })
 
     // HERO SUBTITLE
