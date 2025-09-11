@@ -44,7 +44,7 @@ export const SkillsCard = ({ title, skills }) => {
     >
       <h4 className="text-[18px]">{title}</h4>
 
-      <section className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-3 lg:grid-cols-4 gap-4 justify-items-center font-inter">
+      <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-3 lg:grid-cols-4 gap-4 justify-items-center font-inter">
         {skills.map((skill, index) => (
           <div
             key={index}
@@ -59,7 +59,7 @@ export const SkillsCard = ({ title, skills }) => {
             </h6>
           </div>
         ))}
-      </section>
+      </div>
     </div>
   )
 }

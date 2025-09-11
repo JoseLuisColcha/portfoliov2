@@ -181,10 +181,7 @@ export const Skills = () => {
   ]
 
   return (
-    <section
-      id="habilidades"
-      className="page-section col-center px-[8vw] sm:px-0"
-    >
+    <section id="habilidades" className="col-center px-[8vw] sm:px-0">
       <TitleSection title="HABILIDADES" subtitle="MI STACK" />
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

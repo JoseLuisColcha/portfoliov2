@@ -38,7 +38,7 @@ export const Contact = () => {
   return (
     <section
       id="contacto"
-      className="page-section w-full col-center mb-[680px] md:mb-[480px]"
+      className="w-full col-center mb-[680px] md:mb-[480px]"
     >
       <TitleSection title="CONTACTO" subtitle="HABLEMOS" />
       <SocialNetworks />

@@ -1,7 +1,6 @@
-
 export const ProjectCardTags = ({ projectOptionTags }) => {
   return (
-    <section className="flex flex-wrap content-start items-start gap-1.5 my-2">
+    <div className="flex flex-wrap content-start items-start gap-1.5 my-2">
       {projectOptionTags.map((tag, index) => (
         <span
           key={index}
@@ -10,6 +9,6 @@ export const ProjectCardTags = ({ projectOptionTags }) => {
           {tag}
         </span>
       ))}
-    </section>
+    </div>
   )
 }

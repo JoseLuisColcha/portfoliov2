@@ -4,7 +4,7 @@ import { TbWorldWww } from 'react-icons/tb'
 
 export const ProjectCardButtons = ({ projectOption }) => {
   return (
-    <section className="flex gap-4 justify-center text-xs mt-3">
+    <div className="flex gap-4 justify-center text-xs mt-3">
       <a
         href={projectOption.code_url || projectOption.design_url}
         target="_blank"
@@ -29,6 +29,6 @@ export const ProjectCardButtons = ({ projectOption }) => {
         <TbWorldWww className="w-4 h-4" />
         <h6>VER DEMO</h6>
       </a>
-    </section>
+    </div>
   )
 }

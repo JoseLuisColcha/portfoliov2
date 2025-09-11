@@ -74,7 +74,7 @@ export const HeroSection = () => {
   }, [])
 
   return (
-    <section id="inicio" className="page-section w-full h-screen relative">
+    <section id="inicio" className="w-full h-screen relative">
       {/* HERO IMAGEN */}
       <div
         ref={imageRef}
@@ -96,7 +96,7 @@ export const HeroSection = () => {
 
       <div className=" absolute bottom-0 space-y-6 z-20 inset-x-[8.4vw] sm:inset-x-0 md:inset-x-0">
         {/* HERO INTRO */}
-        <section
+        <div
           ref={introRef}
           className=" max-w-full sm:max-w-[40%] md:max-w-[40%] lg:max-w-[40%] space-y-3 mx-auto sm:mx-0"
         >
@@ -107,10 +107,10 @@ export const HeroSection = () => {
           </p>
 
           <SecondaryButtonSVG />
-        </section>
+        </div>
 
         {/* HERO TITLE*/}
-        <section className="flex flex-col mb-4">
+        <div className="flex flex-col mb-4">
           <h1
             ref={titleRef}
             className="font-druk text-center text-[14.8vw]/[12vw] sm:text-[15.2vw]/[12vw] md:text-[14.9vw]/[12vw] lg:text-[14.2vw]/[12vw] text-brand"
@@ -125,7 +125,7 @@ export const HeroSection = () => {
           >
             & DISEÑADOR UI/UX
           </h4>
-        </section>
+        </div>
       </div>
     </section>
   )

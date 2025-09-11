@@ -4,7 +4,7 @@ export const useActiveSection = () => {
   const [activeSection, setActiveSection] = useState('inicio')
 
   useEffect(() => {
-    const sections = document.querySelectorAll('.page-section')
+    const sections = document.querySelectorAll('main section')
 
     const observer = new IntersectionObserver(
       (entries) => {

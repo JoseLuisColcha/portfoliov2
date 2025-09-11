@@ -5,7 +5,7 @@ export const AboutMe = () => {
   const { paragraphRef } = useAnimationAboutMe()
 
   return (
-    <section id="sobre-mi" className="page-section col-center">
+    <section id="sobre-mi" className="col-center">
       <TitleSection title="ACERCA DE MI" subtitle="TRAYECTORIA" />
 
       <p
