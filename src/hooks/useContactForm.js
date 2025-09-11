@@ -57,9 +57,9 @@ export const useContactForm = () => {
       await schema.validate(form, { abortEarly: false })
       setErrors({})
       return true
-    } catch (err) {
+    } catch (error) {
       const newErrors = {}
-      err.inner.forEach((e) => (newErrors[e.path] = e.message))
+      error.inner.forEach((e) => (newErrors[e.path] = e.message))
       setErrors(newErrors)
       return false
     }

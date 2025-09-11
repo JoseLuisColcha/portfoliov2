@@ -10,7 +10,7 @@ export const PrimaryButton = () => {
       }}
     >
       <span>CONTÁCTAME</span>
-      <FaArrowRight className="size-4 -rotate-[45deg] group-hover:rotate-0 transition-all duration-300" />
+      <FaArrowRight className="size-[15px] -rotate-[45deg] group-hover:rotate-0 transition-all duration-300" />
     </a>
   )
 }

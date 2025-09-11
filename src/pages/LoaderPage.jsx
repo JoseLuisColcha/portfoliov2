@@ -53,7 +53,7 @@ export const LoaderPage = ({ setLoading }) => {
   return (
     <div
       ref={loaderRef}
-      className="fixed inset-0 bg-black flex items-center justify-center"
+      className="fixed inset-0 bg-[#1A1411] flex items-center justify-center"
     >
       <LogoSVG />
     </div>
