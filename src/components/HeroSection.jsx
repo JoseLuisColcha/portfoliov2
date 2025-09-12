@@ -35,17 +35,20 @@ export const HeroSection = () => {
     }
 
     //HERO TITLE
-    const split = new SplitText(titleRef.current, { type: 'chars' })
+    document.fonts.ready.then(() => {
+      const split = new SplitText(titleRef.current, { type: 'chars' })
 
-    gsap.from(split.chars, {
-      opacity: 0,
-      z: -200,
-      rotateX: -90,
-      duration: 1,
-      filter: 'blur(20px)',
-      ease: 'power4.out',
-      stagger: 0.05,
-      transformOrigin: 'center center -50',
+      gsap.set(titleRef.current, { visibility: 'visible' })
+      gsap.from(split.chars, {
+        opacity: 0,
+        z: -200,
+        rotateX: -90,
+        duration: 1,
+        filter: 'blur(20px)',
+        ease: 'power4.out',
+        stagger: 0.05,
+        transformOrigin: 'center center -50',
+      })
     })
 
     // HERO SUBTITLE
@@ -108,7 +111,7 @@ export const HeroSection = () => {
         </div>
 
         {/* HERO TITLE*/}
-        <div className="flex flex-col mb-4">
+        <div className="flex flex-col mb-4 invisible">
           <h1
             ref={titleRef}
             className="font-druk text-center text-[14.8vw]/[12vw] sm:text-[15.2vw]/[12vw] md:text-[14.9vw]/[12vw] lg:text-[14.2vw]/[12vw] text-brand"

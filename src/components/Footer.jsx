@@ -49,7 +49,7 @@ export const Footer = () => {
 
           <div className="flex flex-row gap-1 items-center text-brand text-[15px] ">
             <TbWorld className="size-5" />
-            <h6>www.miportfolio.com</h6>
+            <h6>www.fenixtriad.com</h6>
           </div>
         </div>
       </section>
