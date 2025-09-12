@@ -111,10 +111,10 @@ export const HeroSection = () => {
         </div>
 
         {/* HERO TITLE*/}
-        <div className="flex flex-col mb-4 invisible">
+        <div className="flex flex-col mb-4">
           <h1
             ref={titleRef}
-            className="font-druk text-center text-[14.8vw]/[12vw] sm:text-[15.2vw]/[12vw] md:text-[14.9vw]/[12vw] lg:text-[14.2vw]/[12vw] text-brand"
+            className="font-druk text-center text-[14.8vw]/[12vw] sm:text-[15.2vw]/[12vw] md:text-[14.9vw]/[12vw] lg:text-[14.2vw]/[12vw] text-brand invisible"
           >
             DESARROLLADOR DE SOFTWARE
           </h1>
