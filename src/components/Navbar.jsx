@@ -36,7 +36,7 @@ export const Navbar = () => {
       {/* LOGO */}
       <a
         href="/"
-        className="header-item absolute left-0 h-full w-[60px] sm:w-[70px] flex-center z-40"
+        className="header-item absolute left-0 h-full w-[40px] sm:w-[50px] md:w-[70px] flex-center z-40"
       >
         <img
           src="/images/jlc-logo.svg"

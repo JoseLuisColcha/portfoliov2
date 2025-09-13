@@ -11,6 +11,7 @@ export const HeroSection = () => {
   const subTitleRef = useRef(null)
   const imageRef = useRef(null)
   const introRef = useRef(null)
+  const spothLightRef = useRef(null)
 
   useGSAP(() => {
     const isFirefox = navigator.userAgent.toLowerCase().includes('firefox')
@@ -72,11 +73,26 @@ export const HeroSection = () => {
       ease: 'power4.out',
       delay: 1.1,
     })
+
+    // Spotlight 
+    gsap.from(spothLightRef.current, {
+      opacity: 0,
+      scale: 0.2,
+      duration: 1.2,
+      ease: 'power4.out',
+      delay: 1.3,
+    })
+    
   }, [])
 
   return (
     <section id="inicio" className="w-full h-screen relative">
       {/* HERO IMAGEN */}
+
+      <div
+        ref={spothLightRef}
+        className="absolute inset-0 m-auto bg-radial  size-[420px] sm:size-[450px] from-white/30 via-bramd/10 to-black"
+      ></div>
       <div
         ref={imageRef}
         className="absolute inset-x-0 sm:bottom-15 top-20 md:bottom-0 flex justify-center z-10"
@@ -114,7 +130,7 @@ export const HeroSection = () => {
         <div className="flex flex-col mb-4">
           <h1
             ref={titleRef}
-            className="font-druk text-center text-[14.8vw]/[12vw] sm:text-[15.2vw]/[12vw] md:text-[14.9vw]/[12vw] lg:text-[14.2vw]/[12vw] text-brand invisible"
+            className="font-druk text-center text-[14.5vw]/[12vw] sm:text-[15.2vw]/[12vw] md:text-[14.9vw]/[12vw] lg:text-[14.2vw]/[12vw] text-brand invisible"
           >
             DESARROLLADOR DE SOFTWARE
           </h1>

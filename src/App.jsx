@@ -21,7 +21,7 @@ function App() {
       {loading && <LoaderPage setLoading={setLoading} />}
 
       {!loading && (
-        <main className="relative min-h-screen px-[2vw] sm:px-[10vw] md:px-[11vw] lg:px-[12.8vw] flex-center flex-col overflow-hidden gap-[15vw] md:gap-[9vw]">
+        <main className="relative min-h-screen px-[3vw] sm:px-[10vw] md:px-[11vw] lg:px-[12.8vw] flex-center flex-col overflow-hidden gap-[15vw] md:gap-[9vw]">
           <Navbar />
           <HeroSection />
           <AboutMe />
