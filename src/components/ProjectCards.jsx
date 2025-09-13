@@ -80,7 +80,7 @@ export const ProjectCards = () => {
         'Sitio web desarrollado para presentar de manera organizada mi esperiencia y mis proyectos, con información sobre funcionalidades y tecnologías empleadas',
       tags: ['REACT', 'TAILWIND CSS', 'GSAP'],
       img: '/images/portfolio-project.webp',
-      demo_url: 'https://github.com/JoseLuisColcha/portfoliov2',
+      demo_url: 'https://portfoliov2-olive-two.vercel.app/',
       code_url: 'https://github.com/JoseLuisColcha/portfoliov2',
     },
   ]
