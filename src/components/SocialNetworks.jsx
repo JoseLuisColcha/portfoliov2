@@ -53,7 +53,7 @@ export const SocialNetworks = () => {
       </a>
 
       <a
-        href="https://www.linkedin.com/in/jose-colcha/"
+        href="https://www.linkedin.com/in/joseluiscolcha/"
         target="_blank"
         rel="noopener noreferrer"
         className="icon-hover"
