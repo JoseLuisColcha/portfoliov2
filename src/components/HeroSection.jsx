@@ -91,7 +91,7 @@ export const HeroSection = () => {
 
       <div
         ref={spothLightRef}
-        className="absolute inset-0 m-auto bg-radial  size-[420px] sm:size-[450px] from-white/30 via-bramd/10 to-black"
+        className="absolute inset-0 m-auto bg-radial  size-[420px] sm:size-[450px] from-white/30 to-black"
       ></div>
       <div
         ref={imageRef}
@@ -117,7 +117,7 @@ export const HeroSection = () => {
           ref={introRef}
           className=" max-w-full sm:max-w-[40%] md:max-w-[40%] lg:max-w-[40%] space-y-3 mx-auto sm:mx-0"
         >
-          <p className="hero-intro-item font-inter text-sm sm:text-base text-left">
+          <p className="hero-intro-item font-inter  text-white/90 text-sm sm:text-base text-left">
             Hola, soy José Luis Colcha. Me especializo en desarrollar
             aplicaciones web modernas, con un enfoque en ofrecer una excelente
             experiencia de usuario y diseños visuales atractivos.

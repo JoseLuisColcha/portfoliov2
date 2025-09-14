@@ -10,7 +10,7 @@ export const AboutMe = () => {
 
       <p
         ref={paragraphRef}
-        className="font-inter px-10 sm:px-10 md:px-20 lg:px-40 text-start text-sm sm:text-base"
+        className="font-inter px-10 sm:px-10 md:px-20 lg:px-40 text-start text-sm sm:text-base text-white/90"
       >
         Soy un apasionado por la tecnología y el diseño, graduado en Desarrollo
         de Software en la EPN, tras mis estudios, comencé mi camino como
