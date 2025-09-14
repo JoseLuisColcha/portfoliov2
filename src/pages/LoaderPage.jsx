@@ -27,17 +27,17 @@ export const LoaderPage = ({ setLoading }) => {
         .to('#path-j', {
           drawSVG: '100%',
           ease: 'sine.inOut',
-          duration: 0.8,
+          duration: 0.7,
         })
         .to('#path-l', {
           drawSVG: '100%',
           ease: 'sine.inOut',
-          duration: 0.8,
+          duration: 0.7,
         })
         .to('#path-c', {
           drawSVG: '100%',
           ease: 'sine.in',
-          duration: 0.8,
+          duration: 0.7,
         })
 
       svgTimeline.to(loaderRef.current, {

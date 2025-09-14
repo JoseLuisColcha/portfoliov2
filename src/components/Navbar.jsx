@@ -1,16 +1,12 @@
+import { useGSAP } from '@gsap/react'
+import gsap from 'gsap'
 import { LINKS_OPTIONS } from '../constants/linksOptions'
 import { MobileMenu } from './MobileMenu'
+import { NavLinkItem } from './NavLinkItem'
 import { NavSVG } from './NavSVG'
 import { PrimaryButton } from './PrimaryButton'
-import gsap from 'gsap'
-import { useGSAP } from '@gsap/react'
-import { useAnimatedLink } from '../hooks/useAnimatedLink'
-import { useActiveSection } from '../hooks/useActiveSection'
 
 export const Navbar = () => {
-  const { handleMouseEnter, handleMouseLeave } = useAnimatedLink()
-  const { activeSection } = useActiveSection()
-
   useGSAP(() => {
     const isFirefox = navigator.userAgent.toLowerCase().includes('firefox')
 
@@ -51,7 +47,6 @@ export const Navbar = () => {
 
       {/* MENU DESKTOP */}
       <nav className="hidden lg:flex justify-center items-center h-full w-full relative">
-        {/* LINKS */}
         <div className="relative h-full w-[500px] ">
           <div className="absolute flex justify-around items-center inset-0 ">
             <ul
@@ -60,28 +55,7 @@ export const Navbar = () => {
             >
               {LINKS_OPTIONS.map((link) => {
                 if (link.label !== 'CONTACTO') {
-                  return (
-                    <a
-                      key={link.id}
-                      href={`#${link.id}`}
-                      className={`hover:text-brand transition-all duration-300 overflow-hidden h-[23px] ${
-                        activeSection === link.id
-                          ? 'text-brand font-semibold'
-                          : 'text-white'
-                      }`}
-                      onMouseEnter={handleMouseEnter}
-                      onMouseLeave={handleMouseLeave}
-                    >
-                      <div className="text-wrapper flex flex-col">
-                        <span className="text-center h-[23px] flex-center">
-                          {link.label}
-                        </span>
-                        <span className="text-center h-[23px] flex-center">
-                          {link.label}
-                        </span>
-                      </div>
-                    </a>
-                  )
+                  return <NavLinkItem key={link.id} link={link} />
                 }
               })}
             </ul>
