@@ -11,14 +11,14 @@ export const ExperienceCards = () => {
       company: 'ADUANERO HY - SISTEMA CLASIFICADOR ADUANERO',
       duration: 'JUNIO 2024 – AGOSTO 2024',
       description:
-        'Diseñé un sistema para la clasificación de documentos de aduanas, recopilando y analizando requisitos junto al cliente para definir el alcance y transformarlos en una interfaz intuitiva con filtros y búsquedas avanzadas que ofrecieron una excelente experiencia de usuario, este prototipo interactivo permitió validar la arquitectura y los flujos de manera realista.',
+        'Diseñé la estructura para un sistema clasificador de documentos aduaneros, recopilando y analizando requisitos junto al cliente para definir el alcance y transformarlos en una interfaz intuitiva con filtros y búsquedas avanzadas, este prototipo interactivo permitió validar la arquitectura y los flujos de manera realista.',
     },
     {
       title: 'DESARROLLADOR FRONTEND | FREELANCE',
       company: 'ADUANERO HY - SISTEMA DE INFORMACIÓN ADUANERA',
       duration: 'MARZO 2023 – OCTUBRE 2023',
       description:
-        'Diseñé y desarrollé la interfaz de usuario de un sistema para la gestión de datos aduaneros confidenciales, implementando formularios avanzados con filtros y rangos de búsqueda, integración de datos desde el backend, tablas dinámicas con paginación eficiente y visualización mediante gráficos estadísticos personalizables.',
+        'Diseñé la UI y desarrollé el frontend de un sistema para la gestión de datos aduaneros confidenciales, implementando formularios avanzados con filtros y rangos de búsqueda, integración de datos desde el backend, tablas dinámicas con paginación eficiente y visualización mediante gráficos estadísticos personalizables.',
     },
     {
       title: 'ASISTENTE DE SOPORTE WEB | PASANTIAS',
