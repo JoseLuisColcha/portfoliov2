@@ -34,7 +34,8 @@ export const ProjectCards = () => {
       tags: ['ANGULAR', 'TAILWIND CSS', 'GSAP'],
       img: '/images/software-services-project.webp',
       demo_url: 'https://fe2024nix.github.io/NIX_PAGE/',
-      code_url: 'https://github.com/FE2024NIX/NIX_PAGE.git',
+      code_url:
+        'https://github.com/FE2024NIX/NIX_PAGE/tree/Integracion_Desarrollo',
     },
     {
       title: 'CLASIFICADOR ADUANERO - HY',
