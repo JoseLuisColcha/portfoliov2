@@ -28,6 +28,15 @@ export const ProjectCards = () => {
       code_url: 'https://github.com/JoseLuisColcha/Poli-Huellas/',
     },
     {
+      title: 'FENIX TRIAD',
+      description:
+        'Sitio web diseñado para presentar servicios de software, con secciones informativas y un diseño moderno y responsivo orientado a la captación de clientes',
+      tags: ['ANGULAR', 'TAILWIND CSS', 'GSAP'],
+      img: '/images/software-services-project.webp',
+      demo_url: 'https://fe2024nix.github.io/NIX_PAGE/',
+      code_url: 'https://github.com/FE2024NIX/NIX_PAGE.git',
+    },
+    {
       title: 'CLASIFICADOR ADUANERO - HY',
       description:
         'Diseño de aplicación web para facilitar el acceso a documentos de aduanas mediante un buscador intuitivo y opciones avanzadas de clasificación.',
@@ -46,15 +55,6 @@ export const ProjectCards = () => {
       demo_url: 'https://aduanero.com.ec/',
       design_url:
         'https://www.figma.com/design/y1eiOZQNeP9KbHaGRk9KJm/DataBussinessV2?node-id=0-1&p=f&t=81Z42MALhGLDdegL-0',
-    },
-    {
-      title: 'FENIX TRIAD',
-      description:
-        'Sitio web diseñado para presentar servicios de software, con secciones informativas y un diseño moderno y responsivo orientado a la captación de clientes',
-      tags: ['ANGULAR', 'TAILWIND CSS', 'GSAP'],
-      img: '/images/software-services-project.webp',
-      demo_url: 'https://www.fenixtriad.com',
-      code_url: 'https://github.com/FE2024NIX/NIX_PAGE.git',
     },
     {
       title: 'CALENDARIO WEB',
