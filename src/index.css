@@ -65,8 +65,9 @@ body {
 @utility error-txt {
     @apply font-inter text-red-500 text-sm mt-1
 }
+
 @utility mobile-nav-icon {
-    @apply size-7 sm:size-8 lg:hidden absolute right-0 hover:text-brand transition-all duration-300 z-60 cursor-pointer
+    @apply size-7 sm:size-10 lg:hidden absolute right-0 hover:text-brand transition-all duration-300 z-60 cursor-pointer
 }
 
 
