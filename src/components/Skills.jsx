@@ -6,10 +6,11 @@ import {
   SiApachecouchdb,
   SiPostman,
   SiGreensock,
+  SiExpress,
 } from 'react-icons/si'
 import { TbBrandCSharp } from 'react-icons/tb'
 import { DiMysql, DiMongodb, DiPhotoshop, DiIllustrator } from 'react-icons/di'
-import { RiTailwindCssFill, RiSupabaseFill } from 'react-icons/ri'
+import { RiTailwindCssFill, RiSupabaseFill, RiNextjsFill } from 'react-icons/ri'
 import { BsFiletypeSql } from 'react-icons/bs'
 
 import {
@@ -28,6 +29,7 @@ import {
   FaDocker,
   FaWordpress,
   FaFigma,
+  FaNodeJs,
 } from 'react-icons/fa'
 
 export const Skills = () => {
@@ -87,6 +89,10 @@ export const Skills = () => {
           title: 'React',
         },
         {
+          icon: <RiNextjsFill />,
+          title: 'NextJs',
+        },
+        {
           icon: <FaAngular />,
           title: 'Angular',
         },
@@ -108,9 +114,14 @@ export const Skills = () => {
           title: 'Laravel',
         },
         {
+          icon: <SiExpress />,
+          title: 'Expressjs',
+        },
+        {
           icon: <DiMongodb />,
           title: 'MongoDB',
         },
+
         {
           icon: <DiMysql />,
           title: 'MySQL',
