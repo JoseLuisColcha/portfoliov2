@@ -1,12 +1,38 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 🌐 Portafolio Personal  
 
-Currently, two official plugins are available:
+✨ Este es mi portafolio web, diseñado y desarrollado para mostrar mis habilidades como **Frontend Developer** y **UI/UX Designer**.  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🔗 **Visítalo aquí:** [👉 josecolcha.dev](https://portfoliov2-olive-two.vercel.app/)  
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tecnologías Utilizadas  
+
+<div align="center">
+
+![React](https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=black&style=for-the-badge)  
+![TailwindCSS](https://img.shields.io/badge/TailwindCSS-38B2AC?logo=tailwind-css&logoColor=white&style=for-the-badge)  
+![GSAP](https://img.shields.io/badge/GSAP-88CE02?logo=greensock&logoColor=black&style=for-the-badge)  
+![Yup](https://img.shields.io/badge/Yup-2C8EBB?logoColor=white&style=for-the-badge)  
+
+</div>
+
+---
+
+## ✨ Características  
+
+- ⚡ Animaciones fluidas con **GSAP**  
+- 🎨 Estilos modernos y responsivos con **TailwindCSS**  
+- ⚛️ Construido con **React** para una experiencia rápida e interactiva  
+- ✅ Validaciones de formularios con **Yup**  
+
+---
+
+## 📸 Vista Previa  
+
+<div align="center">
+  <img src="https://i.postimg.cc/P5DgJkH5/Captura-de-pantalla-2025-09-17-191206.png" alt="Preview del Portafolio" width="800px"/>
+</div>
+
+---
