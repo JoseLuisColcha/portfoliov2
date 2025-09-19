@@ -95,7 +95,7 @@ export const HeroSection = () => {
       ></div>
       <div
         ref={imageRef}
-        className="absolute inset-x-0 sm:bottom-15 top-20 md:bottom-0 flex justify-center z-10"
+        className="absolute inset-y-[17vh]  inset-x-0 sm:bottom-15 top-20 md:bottom-0 flex justify-center z-10"
       >
         <img
           className="object-contain w-[360px] sm:w-[360px] md:w-[400px]"
