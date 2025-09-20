@@ -11,7 +11,7 @@ export const Navbar = () => {
     const isFirefox = navigator.userAgent.toLowerCase().includes('firefox')
 
     gsap.from('.header', {
-      y: -50,
+      y: -130,
       opacity: 0,
       ...(isFirefox ? {} : { filter: 'blur(30px)' }),
       duration: 1.5,

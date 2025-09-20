@@ -44,10 +44,10 @@ export const HeroSection = () => {
         opacity: 0,
         z: -200,
         rotateX: -90,
-        duration: 1,
+        duration: 0.8,
         filter: 'blur(20px)',
         ease: 'power4.out',
-        stagger: 0.05,
+        stagger: 0.03,
         transformOrigin: 'center center -50',
       })
     })
@@ -60,7 +60,7 @@ export const HeroSection = () => {
       skewY: 10,
       duration: 1,
       ease: 'power3.out',
-      delay: 1.3,
+      delay: 0.9,
     })
 
     // HERO IMAGE
@@ -71,16 +71,16 @@ export const HeroSection = () => {
       scale: 0.8,
       duration: 1.2,
       ease: 'power4.out',
-      delay: 1.1,
+      delay: 0.9,
     })
 
-    // Spotlight 
+    // SPOTLIGHT 
     gsap.from(spothLightRef.current, {
       opacity: 0,
       scale: 0.2,
       duration: 1.2,
       ease: 'power4.out',
-      delay: 1.3,
+      delay: 1.2,
     })
     
   }, [])
@@ -111,13 +111,13 @@ export const HeroSection = () => {
         />
       </div>
 
-      <div className=" absolute bottom-0 space-y-6 z-20 inset-x-[8.4vw] sm:inset-x-0 md:inset-x-0">
+      <div className="absolute bottom-0 space-y-6 z-20 inset-x-[8.4vw] sm:inset-x-0 md:inset-x-0">
         {/* HERO INTRO */}
         <div
           ref={introRef}
-          className=" max-w-full sm:max-w-[40%] md:max-w-[40%] lg:max-w-[40%] space-y-3 mx-auto sm:mx-0"
+          className="flex flex-col sm:items-start items-center max-w-full sm:max-w-[40%] md:max-w-[40%] lg:max-w-[40%] space-y-[14px]"
         >
-          <p className="hero-intro-item font-inter  text-white/90 text-sm sm:text-base text-left">
+          <p className="hero-intro-item font-inter text-white/90 text-sm sm:text-base text-left w-[75vw] sm:w-full sm:text-left">
             Hola, soy José Luis Colcha. Me especializo en desarrollar
             aplicaciones web modernas, con un enfoque en ofrecer una excelente
             experiencia de usuario y diseños visuales atractivos.

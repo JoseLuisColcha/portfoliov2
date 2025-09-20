@@ -21,28 +21,28 @@ export const LoaderPage = ({ setLoading }) => {
         defaults: { ease: 'none' },
       })
 
-      svgTimeline.timeScale(1.5)
+      svgTimeline.timeScale(1.4)
 
       svgTimeline
         .to('#path-j', {
           drawSVG: '100%',
           ease: 'sine.inOut',
-          duration: 0.7,
+          duration: 0.6,
         })
         .to('#path-l', {
           drawSVG: '100%',
           ease: 'sine.inOut',
-          duration: 0.7,
+          duration: 0.6,
         })
         .to('#path-c', {
           drawSVG: '100%',
           ease: 'sine.in',
-          duration: 0.7,
+          duration: 0.6,
         })
 
       svgTimeline.to(loaderRef.current, {
         y: '-100%',
-        duration: 1,
+        duration: 0.8,
         ease: 'power4.inOut',
         onComplete: () => setLoading(false),
       })
