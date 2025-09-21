@@ -49,7 +49,7 @@ export const Footer = () => {
           </div>
 
           <div className="flex flex-row gap-1 items-center text-brand text-[15px] ">
-            <TbWorld className="size-5" />
+            <MdOutlineMail className="size-5" />
             <h6>jose.colcha@outlook.es</h6>
           </div>
         </div>
