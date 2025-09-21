@@ -1,5 +1,6 @@
 import { MdOutlineMail } from 'react-icons/md'
 import { TbWorld } from 'react-icons/tb'
+import { FaMapMarkerAlt } from 'react-icons/fa'
 import { LINKS_OPTIONS } from '../constants/linksOptions'
 
 export const Footer = () => {
@@ -43,13 +44,13 @@ export const Footer = () => {
 
         <div className="flex flex-col items-start gap-1">
           <div className="flex flex-row gap-1 items-center text-brand text-[15px] ">
-            <MdOutlineMail className="size-5" />
-            <h6 className="">jose.colcha@outlook.es</h6>
+            <FaMapMarkerAlt className="size-5" />
+            <h6 className="">Quito - Ecuador</h6>
           </div>
 
           <div className="flex flex-row gap-1 items-center text-brand text-[15px] ">
             <TbWorld className="size-5" />
-            <h6>www.fenixtriad.com</h6>
+            <h6>jose.colcha@outlook.es</h6>
           </div>
         </div>
       </section>
