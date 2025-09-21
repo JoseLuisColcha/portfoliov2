@@ -11,7 +11,7 @@ export const ExperienceCards = () => {
       company: 'ADUANERO HY - SISTEMA CLASIFICADOR ADUANERO',
       duration: 'JUNIO 2024 – AGOSTO 2024',
       description:
-        'Diseñé la estructura para un sistema clasificador de documentos aduaneros, recopilando y analizando requisitos junto al cliente para definir el alcance y transformarlos en una interfaz intuitiva con filtros y búsquedas avanzadas, este prototipo interactivo permitió validar la arquitectura y los flujos de manera realista.',
+        'Diseñé la interfaz de usuario para un sistema clasificador de documentos aduaneros, recopilando y analizando requisitos junto al cliente para definir el alcance y transformarlos en una interfaz intuitiva con filtros y búsquedas avanzadas, este prototipo interactivo permitió validar la arquitectura y los flujos de manera realista.',
     },
     {
       title: 'DESARROLLADOR FRONTEND | FREELANCE',
