@@ -7,6 +7,7 @@ import {
   SiPostman,
   SiGreensock,
   SiExpress,
+  SiTypescript,
 } from 'react-icons/si'
 import { TbBrandCSharp } from 'react-icons/tb'
 import { DiMysql, DiMongodb, DiPhotoshop, DiIllustrator } from 'react-icons/di'
@@ -40,6 +41,10 @@ export const Skills = () => {
         {
           icon: <IoLogoJavascript />,
           title: 'JavaScript',
+        },
+        {
+          icon: <SiTypescript />,
+          title: 'Typescript',
         },
         {
           icon: <FaJava />,
