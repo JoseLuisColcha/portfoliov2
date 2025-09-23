@@ -10,15 +10,6 @@ export const ProjectCards = () => {
 
   const PROJECT_OPTIONS = [
     {
-      title: 'MOJITO CÓCTELES ',
-      description:
-        'Un sistema web interactivo que invita a los usuarios a descubrir cócteles de manera sencilla, con imágenes llamativas y una experiencia visual amigable.',
-      tags: ['REACT', 'TAILWIND CSS', 'GSAP'],
-      img: '/images/cocktails-project.webp',
-      demo_url: 'https://gsap-cocktails-navy.vercel.app/',
-      code_url: 'https://github.com/JoseLuisColcha/gsap-cocktails',
-    },
-    {
       title: 'POLI HUELLAS',
       description:
         'Sitio web para gestionar la adopción de mascotas rescatadas, donde los usuarios pueden visualizar perfiles de animales y completar solicitudes de adopción intuitivamente.',
@@ -56,6 +47,15 @@ export const ProjectCards = () => {
       demo_url: 'https://aduanero.com.ec/',
       design_url:
         'https://www.figma.com/design/y1eiOZQNeP9KbHaGRk9KJm/DataBussinessV2?node-id=0-1&p=f&t=81Z42MALhGLDdegL-0',
+    },
+    {
+      title: 'MOJITO CÓCTELES ',
+      description:
+        'Un sistema web interactivo que invita a los usuarios a descubrir cócteles de manera sencilla, con imágenes llamativas y una experiencia visual amigable.',
+      tags: ['REACT', 'TAILWIND CSS', 'GSAP'],
+      img: '/images/cocktails-project.webp',
+      demo_url: 'https://gsap-cocktails-navy.vercel.app/',
+      code_url: 'https://github.com/JoseLuisColcha/gsap-cocktails',
     },
     {
       title: 'CALENDARIO WEB',
