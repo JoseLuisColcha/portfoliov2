@@ -27,7 +27,7 @@ export const MobileMenu = () => {
 
       <div
         className={`fixed top-16 right-0 h-screen w-60 sm:w-90 bg-black shadow-lg transform transition-transform duration-300 z-50 lg:hidden ${
-          isOpen ? 'translate-x-0' : 'translate-x-full'
+          isOpen ? 'translate-x-10' : 'translate-x-110'
         }`}
       >
         <div>
